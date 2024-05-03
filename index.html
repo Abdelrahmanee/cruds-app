@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-center">Prodact Info</h1>
+    <div class="container">
+        <label for="prodactName" class="text-muted">Prodact name :</label>
+        <input type="text" id="prodactName" class="form-control my-2" placeholder="name....">
+
+
+
+        <label for="prodactPrice" class="text-muted">Prodact price :</label>
+        <input type="text" id="prodactPrice" class="form-control my-2" placeholder="price....">
+
+
+        <label for="prodactCategory" class="text-muted">Prodact category :</label>
+        <input type="text" id="prodactCategory" class="form-control   my-2" placeholder="category....">
+
+        <label for="prodactDescription" class="text-muted my-2 ">Prodact description : </label>
+        <textarea name="" class="form-control w-100" id="prodactDescription">
+        </textarea>
+        
+        
+        <button id="addBtn" onclick="addProdact()" class="  btn  btn-outline-primary my-2 d-block ">Add Prodact</button>
+        <button id="updateBtn" onclick="Update(index)"class="btn  btn-outline-success my-2 d-none">Update</button>
+        
+        
+        
+        <input type="text" class=" w-75 form-control mx-auto my-3" oninput="SearchProducts(this.value)" placeholder="Search">
+        <table class="table table-striped">
+            <thead>
+                <th>id</th>
+                <th>ProductName</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="tBody">
+    
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/session-3.js"></script>
+</body>
+</html>
